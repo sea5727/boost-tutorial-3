@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.0)
 project(boost-tutorial-3 VERSION 0.1.0)
 
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(CTest)
@@ -62,6 +62,27 @@ target_link_libraries(boost-thread-3 ${Boost_LIBRARIES})
 
 add_executable(boost-thread-4 boost-thread-4.cpp)
 target_link_libraries(boost-thread-4 ${Boost_LIBRARIES})
+
+add_executable(boost-timer-1-sync boost-timer-1-sync.cpp)
+target_link_libraries(boost-timer-1-sync ${Boost_LIBRARIES})
+
+add_executable(boost-timer-2-async boost-timer-2-async.cpp)
+target_link_libraries(boost-timer-2-async ${Boost_LIBRARIES})
+
+add_executable(boost-timer-3-async-bind boost-timer-3-async-bind.cpp)
+target_link_libraries(boost-timer-3-async-bind ${Boost_LIBRARIES})
+
+add_executable(boost-timer-4-async-bind boost-timer-4-async-bind.cpp)
+target_link_libraries(boost-timer-4-async-bind ${Boost_LIBRARIES})
+
+add_executable(boost-timer-5-async-bind boost-timer-5-async-bind.cpp)
+target_link_libraries(boost-timer-5-async-bind ${Boost_LIBRARIES})
+
+add_executable(boost-bind-1 boost-bind-1.cpp)
+target_link_libraries(boost-bind-1 ${Boost_LIBRARIES})
+
+add_executable(boost-bind-2 boost-bind-2.cpp)
+target_link_libraries(boost-bind-2 ${Boost_LIBRARIES})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
