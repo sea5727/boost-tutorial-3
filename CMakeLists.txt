@@ -55,7 +55,7 @@ add_executable(boost-any-2 boost-any-2.cpp)
 
 add_executable(boost-tuple-1 boost-tuple-1.cpp)
 
-add_executable(boost-bind-1 boost-bind-1.cpp)
+# add_executable(boost-bind-1 boost-bind-1.cpp)
 
 add_executable(boost-thread-1 boost-thread-1.cpp)
 target_link_libraries(boost-thread-1 ${Boost_LIBRARIES})
@@ -104,6 +104,21 @@ target_link_libraries(boost-config-2-json ${Boost_LIBRARIES})
 
 add_executable(boost-config-3-xml boost-config-3-xml.cpp)
 target_link_libraries(boost-config-3-xml ${Boost_LIBRARIES})
+
+add_executable(cpp-virtual-tutorial-1 cpp-virtual-tutorial-1.cpp)
+target_link_libraries(cpp-virtual-tutorial-1 ${Boost_LIBRARIES})
+
+add_executable(cpp-virtual-tutorial-2 cpp-virtual-tutorial-2.cpp)
+target_link_libraries(cpp-virtual-tutorial-2 ${Boost_LIBRARIES})
+
+add_executable(cpp-virtual-tutorial-4 cpp-virtual-tutorial-4.cpp)
+target_link_libraries(cpp-virtual-tutorial-4 ${Boost_LIBRARIES})
+
+add_executable(cpp-virtual-tutorial-5 cpp-virtual-tutorial-5.cpp)
+target_link_libraries(cpp-virtual-tutorial-5 ${Boost_LIBRARIES})
+
+add_executable(cpp-virtual-tutorial-6 cpp-virtual-tutorial-6.cpp)
+target_link_libraries(cpp-virtual-tutorial-6 ${Boost_LIBRARIES})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
