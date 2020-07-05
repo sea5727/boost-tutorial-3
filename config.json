@@ -1,0 +1,20 @@
+{
+    "attribute1" : "100"
+    ,"attribute2" : "0 0 100 100"
+    ,"attribute3" : "0 0 100 100"
+    ,"attribute4" : "200"
+    ,"attribute5" : "5"
+        
+    , "attribute6" :
+     [
+          {
+              "sub-attr1" : "data1"
+              ,"sub-attr2" : "data2"
+          }
+ 
+          ,{
+              "sub-attr1" : "data3"
+              ,"sub-attr2" : "data4"
+          }
+     ]
+ }
