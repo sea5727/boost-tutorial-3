@@ -90,6 +90,15 @@ target_link_libraries(boost-bind-1 ${Boost_LIBRARIES})
 add_executable(boost-bind-2 boost-bind-2.cpp)
 target_link_libraries(boost-bind-2 ${Boost_LIBRARIES})
 
+add_executable(boost-config-1-ini boost-config-1-ini.cpp)
+target_link_libraries(boost-config-1-ini ${Boost_LIBRARIES})
+
+add_executable(boost-config-2-json boost-config-2-json.cpp)
+target_link_libraries(boost-config-2-json ${Boost_LIBRARIES})
+
+add_executable(boost-config-3-xml boost-config-3-xml.cpp)
+target_link_libraries(boost-config-3-xml ${Boost_LIBRARIES})
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
