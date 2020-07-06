@@ -78,6 +78,12 @@ target_link_libraries(boost-timer-4-async-bind ${Boost_LIBRARIES})
 add_executable(boost-timer-5-async-bind boost-timer-5-async-bind.cpp)
 target_link_libraries(boost-timer-5-async-bind ${Boost_LIBRARIES})
 
+add_executable(boost-timer-6 boost-timer-6)
+target_link_libraries(boost-timer-6 ${Boost_LIBRARIES})
+
+add_executable(boost-timer-7 boost-timer-7)
+target_link_libraries(boost-timer-7 ${Boost_LIBRARIES})
+
 add_executable(boost-bind-1 boost-bind-1.cpp)
 target_link_libraries(boost-bind-1 ${Boost_LIBRARIES})
 
