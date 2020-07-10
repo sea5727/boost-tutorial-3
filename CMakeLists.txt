@@ -69,6 +69,10 @@ target_link_libraries(boost-thread-3 ${Boost_LIBRARIES})
 add_executable(boost-thread-4 boost-thread-4.cpp)
 target_link_libraries(boost-thread-4 ${Boost_LIBRARIES})
 
+add_executable(boost-thread-5 boost-thread-5.cpp)
+target_link_libraries(boost-thread-5 ${Boost_LIBRARIES})
+
+
 add_executable(boost-timer-1-sync boost-timer-1-sync.cpp)
 target_link_libraries(boost-timer-1-sync ${Boost_LIBRARIES})
 
